@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f3f2ef;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > div:last-of-type {
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-height: 12rem;
+  margin-top: 40px;
+  padding: 20px 25px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+.status-waiting {
+  background-color: #e0ecf4;
+  min-height: 0;
+}
+
+.status-accepted {
+  background-color: #e1ffe7;
+  min-height: 0;
+}
+
+.status-rejected {
+  background-color: #f7c6c5;
+  min-height: 0;
+}
+
+.container ~ .container {
+  margin-top: 20px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-img-frame {
+  height: 37px;
+  width: 37px;
+  background-color: #cecece;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img-frame i {
+  font-size: 35px;
+  color: #fff;
+}
+
+.profile-company-name {
+  margin-left: 15px;
+  font-weight: 500;
+  color: rgb(49, 49, 49);
+}
+
+.job-title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.company-location-update {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #9e9d9d;
+}
+
+.job-genre {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.job-genre-item {
+  background-color: #dadada;
+  font-size: 13px;
+  padding: 0 10px;
+  border-radius: 3px;
+}
+
+.button {
+  border-radius: 30px;
+  width: fit-content;
+  padding: 5px 20px;
+  border: 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-active {
+  cursor: pointer;
+}
+
+.btn-inactive {
+  background-color: #dadada;
+  color: #9e9d9d;
+}
+
+.bg-blue {
+  background-color: #0077b5;
+  color: white;
+}
+
+.bg-red {
+  background-color: #d62d20;
+  color: white;
+}
+
+.button.bg-blue:hover {
+  background-color: #084a91;
+}
+
+.button.bg-red:hover {
+  background-color: #b21f14;
+}
+
+.button.bg-red {
+  margin-left: auto;
+}
+
+.container-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container-paragraf {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a > span {
+  color: gray;
+  text-decoration: underline;
+}
+
+a:hover > span {
+  color: darkblue;
+}
+
+.lampiran {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  border-radius: 3px;
+}
+
+th {
+  background-color: #0077b5;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+tbody tr:hover {
+  background-color: #ccc;
+}
+
+td {
+  cursor: pointer;
+}
+
+.table-href {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Header-with-exportButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rich-text-box {
+  background-color: #fcfcfc;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 10px;
+}
+
+.img-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.img-container > img {
+  margin-top: 15px;
+  width: 600px;
+}

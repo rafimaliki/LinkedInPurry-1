@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  php-apache:
+    build: .
+    container_name: php-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./php/public:/var/www/public
+      - ./php/app:/var/www/app
+      - ./php/config:/var/www/config
+      - ./php/core:/var/www/core
+      - ./php/logs:/var/www/logs
+      - ./php/config/apache-config.conf:/etc/apache2/sites-available/000-default.conf
+      - ./php/config/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-db
+    command: --max_allowed_packet=32505856
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: linkinpury
+    volumes:
+      - ./php/app/database:/docker-entrypoint-initdb.d
+      - mysql-data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql-db
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "8081:80"
+
+volumes:
+  mysql-data:

@@ -1,0 +1,140 @@
+.page-title {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  font-size: 10px;
+  padding: 0 5px;
+  height: fit-content;
+  vertical-align: center;
+  border: none;
+  border-radius: 3px;
+  font-weight: 500;
+
+  background-color: white;
+  border: 1px solid #0077b5;
+  color: black;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #05557f;
+  color: white;
+}
+
+.selected {
+  background-color: #0077b5;
+  border: 1px solid #0077b5;
+  color: white;
+}
+
+.selected:hover {
+  color: white;
+}
+
+.history-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card-header {
+  background-color: #0077b5;
+  color: white;
+  padding: 5px 15px;
+}
+
+.card-header-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag-item {
+  background-color: #dadada;
+  font-size: 11px;
+  padding: 0 10px;
+  border-radius: 3px;
+  color: black;
+  margin: 0;
+  width: 80px;
+  text-align: center;
+}
+
+.nama-perusahaan {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.posisi {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.status-table {
+  font-size: 13px;
+  padding: 5px 12px;
+}
+
+.row-title {
+  font-weight: 300;
+  width: 120px;
+  vertical-align: top;
+}
+
+.history-card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.atag {
+  text-decoration: none;
+  color: black;
+  width: 60%;
+}
+
+.status-box {
+  background-color: #fcfcfc;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.blue-button {
+}
+
+@media screen and (max-width: 768px) {
+  .tag-item {
+    width: 100%;
+  }
+
+  .atag {
+    width: 95%;
+  }
+}

@@ -1,0 +1,254 @@
+.profil {
+    width: 100%;
+    height: 90.5vh;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilContent {
+    width: 90%;
+    height: 90%;
+    background: linear-gradient(to right, #b0c7c9 60%, #d5e5e8 33%, #f1f8fb 33%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.profilTop {
+    width: 0%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilTop button {
+    width: 50px;
+    height: 50px;
+}
+
+.imgprofil {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 73%;
+    margin-bottom: 15%;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: gainsboro;
+}
+
+.imgprofil i {
+    font-size: 150px;
+}
+
+.profilBot {
+    width: 100%;
+    height: 65%;    
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.profilBot h1 {
+    font-size: 30px;
+    color: #0073b1;
+}
+
+.profilBot p {
+    font-size: 18px;
+}
+
+.leftProfilBot {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.rightProfilBot {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.rightProfilBot i {
+    font-size: 30px;
+    color: #0073b1;
+    align-self: end;
+    cursor: pointer;
+}
+
+dialog {
+    width: 400px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.dialog-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dialog-header .close-btn {
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    background: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-info {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.dialog-footer button {
+    padding: 10px 20px;
+    background-color: #0a66c2;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dialog-footer button:hover {
+    background-color: #004182;
+}
+
+@media (max-width: 1200px) {
+    .profilContent {
+        width: 100%;
+    }
+
+    .profilTop {
+        height: 20%;
+    }
+
+    .profilBot {
+        height: 80%;
+    }
+
+    .leftProfilBot {
+        width: 100%;
+        height: 50%;
+    }
+
+    .rightProfilBot {
+        width: 100%;
+        height: 50%;
+    }
+
+    .imgprofil {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .profil {
+        height: 90vh;
+    }
+
+    .profilContent {
+        height: 100%;
+    }
+
+    .imgprofil {
+        width: 150px;
+        height: 150px;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50%;
+        margin-bottom: 110%;
+        border-radius: 50%;
+        background: gainsboro;
+    }
+
+    .imgprofil i {
+        font-size: 120px;
+    }
+
+    .profilBot h1 {
+        font-size: 25px;
+    }
+
+    .profilBot p {
+        font-size: 16px;
+    }
+
+    .leftProfilBot {
+        margin-left: 10px;
+    }
+
+    .rightProfilBot {
+        margin-right: 10px;
+        margin-top: 215px;
+    }
+}
+

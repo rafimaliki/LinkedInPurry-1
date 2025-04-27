@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f3f2ef;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-height: 12rem;
+  margin-top: 40px;
+  padding: 20px 25px;
+  border: 1px solid #d2d2d2;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.container-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+form {
+  height: fit-content;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-posisi,
+textarea,
+select {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: #0a66c2;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  margin-left: auto;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #084a91;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+#editor {
+  height: 200px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio > p {
+  width: 70px;
+}
